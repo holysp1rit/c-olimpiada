@@ -1,0 +1,30 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main ()
+{
+    int a,r;
+    cin>>a;
+    while (a != 0) 
+    {
+        r = a%10;
+        
+        if (r == 0)
+        {
+            cout<<"bolunmur";
+            break;
+        }
+        
+        if (a%r != 0)
+        {
+            cout<<"bolunmur";
+            break;
+            a/10;
+        }
+        
+        else 
+        {
+            cout<<"bolunur";
+            break;
+        }
+    }
+}
